@@ -1,6 +1,6 @@
 from model.encryption_scheme.ciphertext import Ciphertext
 from monoalphabetic_substitution.monoalphabetic_substitution_key import MonoalphabeticSubstitutionKey
-from constants.constants import ENGLISH_LANGUAGE_LETTER_RANKINGS, LETTER_FREQUENCIES
+from constants.constants import ENGLISH_LANGUAGE_LETTER_RANKINGS, ENGLIGH_LANGUAGE_LETTER_FREQUENCIES
 
 
 class MonoalphabeticSubstitutionAttacker:
@@ -23,7 +23,7 @@ class MonoalphabeticSubstitutionAttacker:
         partially_decrypted_message = ""
         for letter in c:
             decoded_letter = proposed_key.decode_letter(letter)
-            if LETTER_FREQUENCIES[decoded_letter] >= threshold:
+            if ENGLIGH_LANGUAGE_LETTER_FREQUENCIES[decoded_letter] >= threshold:
                 partially_decrypted_message += decoded_letter
             else:
                 partially_decrypted_message += f"({letter})"

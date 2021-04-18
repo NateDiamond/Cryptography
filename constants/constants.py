@@ -1,4 +1,4 @@
-LETTER_FREQUENCIES = {
+ENGLIGH_LANGUAGE_LETTER_FREQUENCIES = {
     "A": 8.2,
     "B": 1.5,
     "C": 2.8,
